@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald: 100,200,300,400,500,600,700');
+
+/* -------------- Colors ------------- */
+/* -------------- Special Paddings/Margins/Text -------------------- */
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+/* -------------- Heading ------------- */
+header {
+  margin: 20px 40px;
+}
+
+.header-link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.logo {
+  background: url("../images/snoop-logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 360px;
+  top: 30px;
+}
