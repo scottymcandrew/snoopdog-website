@@ -24,22 +24,28 @@ h4 {
 /* -------------- Heading ------------- */
 header {
   margin: 0;
+  border-bottom-style: solid;
+  border-color: rgb(152, 35, 224);
 }
 
 .navbar {
   border: none;
 }
 
-.navbar-header {
-  margin-top: 30px;
+.logo-container { /* specifying this custom class since navbar-header is bootstrap's own */
+  margin-top: 25px;
   margin-left: 35px; /* offsetting -15px set by the media query */
   margin-right: 20px;
 }
 
-.navbar-link {
+#navbar-ul a {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 30px;
+  color: rgb(152, 35, 224);
+}
+
+.navbar-link {
   margin-top: 40px;
   padding-left: 15px;
   padding-right: 15px;
