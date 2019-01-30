@@ -1,38 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald: 100,200,300,400,500,600,700');
 
 /* -------------- Colors ------------- */
+.bg-color-navbar {
+  background-color: #ffffff;
+}
+
 /* -------------- Special Paddings/Margins/Text -------------------- */
 h1,
 h2,
 h3,
 h4 {
-    margin: 0;
+  margin: 0;
 }
 
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .center {
   text-align: center;
 }
+
 /* -------------- Heading ------------- */
 header {
-  margin: 20px 40px;
+  margin: 0;
 }
 
-.header-link {
+.navbar {
+  border: none;
+}
+
+.navbar-header {
+  margin-top: 30px;
+  margin-left: 35px; /* offsetting -15px set by the media query */
+  margin-right: 20px;
+}
+
+.navbar-link {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
+  margin-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.logo {
+.navbar-brand {
   background: url("../images/snoop-logo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100px;
+  height: 102px;
   width: 360px;
-  top: 30px;
+}
+
+/* -------------- Media Queries ------------- */
+@media (min-width: 768px) {
+  .navbar-nav {
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float: none;
+  }
 }
