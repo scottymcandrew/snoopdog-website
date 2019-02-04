@@ -1,71 +1,134 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald: 100,200,300,400,500,600,700');
-
 /* -------------- Colors ------------- */
-.bg-color-navbar {
-  background-color: #ffffff;
+
+/* Background */
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/background-image.jpg");
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* -------------- Special Paddings/Margins/Text -------------------- */
+
+/*
+
+Proposed fonts for use in this project:
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Viga', sans-serif;
+font-family: 'Bangers', cursive;
+font-family: 'Sigmar One', cursive;
+
+*/
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
 h1,
 h2,
 h3,
 h4 {
-  margin: 0;
+    margin: 0;
 }
 
-.uppercase {
-  text-transform: uppercase;
+.uppercase-text {
+    text-transform: uppercase;
 }
 
-.center {
-  text-align: center;
+.center-text {
+    text-align: center;
 }
 
-/* -------------- Heading ------------- */
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Viga', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #700CBC;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #700CBC;
+}
+
+/* -------------- Heading / menu bar ------------- */
+
+.nav-header {
+    width: 100%;
+    background-color: rgba(245, 245, 4, 0.836);
+}
+
+.nav-links-left {
+    align-self: center;
+    padding: 0 20px;
+}
+
+.nav-links-right {
+    align-self: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    align-self: center;
+    flex-grow: 6;
+}
+
+#brand-logo-image {
+    height: 100px;
+    width: 360px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* --------------- Flexbox-main ------------- */
+
 header {
-  margin: 0;
-  border-bottom-style: solid;
-  border-color: rgb(152, 35, 224);
+    position: fixed;
+    width: 100%;
 }
 
-.navbar {
-  border: none;
-}
-
-.logo-container { /* specifying this custom class since navbar-header is bootstrap's own */
-  margin-top: 25px;
-  margin-left: 35px; /* offsetting -15px set by the media query */
-  margin-right: 20px;
-}
-
-#navbar-ul a {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  color: rgb(152, 35, 224);
-}
-
-.navbar-link {
-  margin-top: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.navbar-brand {
-  background: url("../images/snoop-logo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 102px;
-  width: 360px;
+.flex-container {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    padding: 25px 0;
 }
 
 /* -------------- Media Queries ------------- */
-@media (min-width: 768px) {
-  .navbar-nav {
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-    float: none;
-  }
+
+@media(max-width: 992px) {
+    .nav-links-left {
+        order: 2;
+    }
+    .nav-links-right {
+        order: 3;
+    }
+    .nav-logo {
+        order: 1;
+    }
 }
