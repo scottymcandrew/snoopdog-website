@@ -68,34 +68,38 @@ a {
     font-family: 'Viga', sans-serif;
     font-weight: 700;
     font-size: 32px;
-    color: #700CBC;
+    color: #fafafa;
 }
 
 a:hover {
     text-decoration: none;
-    color: #700CBC;
+    color: rgba(245, 245, 4, 0.836);
 }
 
 /* -------------- Heading / menu bar ------------- */
 
-.nav-header {
+.header-bar {
     width: 100%;
     background-color: rgba(245, 245, 4, 0.836);
 }
 
-.nav-links-left {
+.header-links-left {
     align-self: center;
-    padding: 0 20px;
+    padding: 20px;
+    width: 220px;
+    background-color: #700CBC;
 }
 
-.nav-links-right {
+.header-links-right {
     align-self: center;
-    padding: 0 20px;
+    padding: 20px;
+    width: 220px;
+    background-color: #700CBC;
 }
 
 .nav-logo {
     align-self: center;
-    flex-grow: 6;
+    flex-grow: 4;
 }
 
 #brand-logo-image {
@@ -114,18 +118,18 @@ header {
 
 .flex-container {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 25px 0;
+    padding: 25px;
 }
 
 /* -------------- Media Queries ------------- */
 
 @media(max-width: 992px) {
-    .nav-links-left {
+    .header-links-left {
         order: 2;
     }
-    .nav-links-right {
+    .header-links-right {
         order: 3;
     }
     .nav-logo {
