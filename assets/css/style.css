@@ -1,6 +1,10 @@
 /* -------------- Colors ------------- */
 
-/* Background */
+.bg-color-amethyst-transparent {
+    background-color: rgba(155, 89, 182, 0.8)
+}
+
+/* -------------- Background -------------- */
 
 .parallax {
     /* The image used */
@@ -19,10 +23,9 @@
 /*
 
 Proposed fonts for use in this project:
-font-family: 'Luckiest Guy', cursive;
 font-family: 'Viga', sans-serif;
-font-family: 'Bangers', cursive;
-font-family: 'Sigmar One', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Varela Round', sans-serif;
 
 */
 
@@ -68,12 +71,25 @@ a {
     font-family: 'Viga', sans-serif;
     font-weight: 700;
     font-size: 32px;
-    color: #fafafa;
+    color: #ffffff;
 }
 
 a:hover {
     text-decoration: none;
-    color: rgba(245, 245, 4, 0.836);
+    color: rgba(245, 245, 4, 0.8);
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.nav-bar a:hover {
+    text-decoration: none;
+    color: rgba(245, 245, 4, 0.8);
 }
 
 /* -------------- Heading / menu bar ------------- */
@@ -87,14 +103,14 @@ a:hover {
     align-self: center;
     padding: 20px;
     width: 220px;
-    background-color: #700CBC;
+    /* background-color: #700CBC; */
 }
 
 .header-links-right {
     align-self: center;
     padding: 20px;
     width: 220px;
-    background-color: #700CBC;
+    /* background-color: #700CBC; */
 }
 
 .nav-logo {
@@ -109,30 +125,62 @@ a:hover {
     padding-right: 10px;
 }
 
+/* --------------- Nav Bar ------------------ */
+
+.nav-bar {
+    /* background-color: rgba(83, 64, 134, 0.596); */
+    padding: 5px;
+}
+
+.nav-bar-link {
+    padding: 5px 20px;
+    flex-grow: 1;
+}
+
+#bio-nav-bar-link {
+    flex-grow: 3;
+}
+
 /* --------------- Flexbox-main ------------- */
 
 header {
-    position: fixed;
     width: 100%;
 }
 
-.flex-container {
+.flex-container-header {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 25px;
+}
+
+.flex-container-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* -------------- Media Queries ------------- */
 
-@media(max-width: 992px) {
+@media(max-width: 849px) {
     .header-links-left {
         order: 2;
+        margin-top: 20px;
     }
     .header-links-right {
         order: 3;
+        margin-top: 20px;
     }
     .nav-logo {
         order: 1;
     }
+    .flex-container-header {
+        flex-direction: column;
+    }
 }
+
+@media screen and (max-width: 700px) {
+    .flex-container-nav-bar {   
+      flex-direction: column;
+    }
+  }
