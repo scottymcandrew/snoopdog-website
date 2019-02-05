@@ -18,9 +18,8 @@
 
 <body class="parallax">
 
-  <!-- Header -->
   <header>
-    <div class="flex-container-header header-bar">
+    <div class="flex-container-header header-bar bg-color-yellow-transparent">
       <div class="header-links-left center-text bg-color-amethyst-transparent">
         <a href="#" class="hvr-buzz-out"><i class="fas fa-book-open"></i> <br> BOOK NOW!</a>
       </div>
@@ -32,7 +31,7 @@
         <a href="#" class="hvr-buzz-out"><i class="fas fa-headphones"></i> <br> NOIZE!</a>
       </div>
     </div>
-  </header>
+  </header><!-- End of Header -->
 
   <nav class="flex-container-nav-bar nav-bar bg-color-amethyst-transparent">
     <div class="nav-bar-link center-text">
@@ -44,11 +43,37 @@
     <div class="nav-bar-link center-text">
       <a href="#" class="hvr-buzz-out"><i class="fas fa-camera-retro"></i> Gallery</a>
     </div>
-  </nav>
+  </nav><!-- End of Nav Bar Container -->
 
   <main>
     <div class="flex-container-main">
+      <div class="main-side-content"><!-- Left Side Bar -->
+        <div id="photoCarousel" class="carousel slide" data-ride="carousel"><!-- Photo Carousel-->
+          <div class="carousel-inner">
+            <div class="carousel-item active carousel-image">
+              <img src="assets/images/snoop1.jpg" class="d-block w-100" alt="Snoop Picture One">
+            </div>
+            <div class="carousel-item carousel-image">
+                <img src="assets/images/snoop2.jpg" class="d-block w-100" alt="Snoop Picture Two">
+            </div>
+            <div class="carousel-item carousel-image">
+                <img src="assets/images/snoop3.jpg" class="d-block w-100" alt="Snoop Picture Three">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div><!-- End Photo Carousel-->
+      </div><!-- End Left Side Bar-->
 
+      <div class="main-content bg-color-yellow-transparent">
+        
+      </div>
 
     </div><!-- End Main Container -->
 

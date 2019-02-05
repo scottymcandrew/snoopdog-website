@@ -70,11 +70,24 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
+..* W3Schools for much of the reference material and examples: https://www.w3schools.com
+..* Bootstrap for some of the layout structure, specific mention of the photo carousel: https://getbootstrap.com/docs/4.2/components/carousel/
+..* Use of FlexBox to arrange the content, reference material at W3Schools (link above) and CSS-Tricks: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+..* Hover CSS for some of the hover effects: http://ianlunn.github.io/Hover/
+
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
 ### Media
 - The photos used in this site were obtained from ...
+
+..* https://officialpsds.com/imageview/rw/21/rw21n6_large.png?1521316555
+..* https://stmed.net/sites/default/files/snoop-dogg-wallpapers-30558-368497.jpg
+..* https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi1s8yTyKTgAhXHA2MBHbCOAW0QjRx6BAgBEAU&url=http%3A%2F%2Fsnoopdogg.com%2F&psig=AOvVaw1Zunb_onLqdQhdwFSKtuQg&ust=1549455081004389
+..* https://www.sbs.com.au/food/article/2017/11/02/martha-stewart-and-snoop-dogg-how-did-happen
+..* http://thesource.com/2016/05/12/snoop-dogg-gives-a-second-breath-to-doggystyle-records/
+
+
 
 ### Acknowledgements
 

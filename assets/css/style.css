@@ -4,6 +4,10 @@
     background-color: rgba(155, 89, 182, 0.8)
 }
 
+.bg-color-yellow-transparent {
+    background-color: rgba(245, 245, 4, 0.8);
+}
+
 /* -------------- Background -------------- */
 
 .parallax {
@@ -16,6 +20,25 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* --------------- Flexbox-main ------------- */
+
+header {
+    width: 100%;
+}
+
+.flex-container-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.flex-container-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* -------------- Special Paddings/Margins/Text -------------------- */
@@ -96,7 +119,6 @@ a:hover {
 
 .header-bar {
     width: 100%;
-    background-color: rgba(245, 245, 4, 0.836);
 }
 
 .header-links-left {
@@ -137,28 +159,32 @@ a:hover {
     flex-grow: 1;
 }
 
+.flex-container-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #bio-nav-bar-link {
     flex-grow: 3;
 }
 
-/* --------------- Flexbox-main ------------- */
+/* ---------------- Main Content ------------- */
 
-header {
-    width: 100%;
+.main-side-content {
+    flex: 30%;
+    padding: 20px 20px;
 }
 
-.flex-container-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 25px;
+.main-content {
+    flex: 70%;
+    padding: 20px 20px;
 }
 
-.flex-container-nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+/* .carousel-image {
+    width: auto;
+    height: 225px;
+    max-height: 225px;
+} */
 
 /* -------------- Media Queries ------------- */
 
