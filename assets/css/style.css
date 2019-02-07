@@ -8,6 +8,34 @@
     background-color: rgba(245, 245, 4, 0.8);
 }
 
+.bg-color-purple-darkest {
+    background-color: rgba(34, 34, 68, 0.8);
+}
+
+.bg-color-purple-dark {
+    background-color: rgba(40, 40, 78, 0.8);
+}
+
+.bg-color-purple-light {
+    background-color: rgba(45, 43, 85, 0.8);
+}
+
+.bg-color-purple-lightest {
+    background-color: rgba(165, 153, 233, 0.8);
+}
+
+.bg-color-burnt-orange {
+    background-color: rgba(250, 208, 0, 0.8)
+}
+
+.bg-color-green-light {
+    background-color: rgba(140, 242, 142, 0.8);
+}
+
+.bg-color-blue-light {
+    background-color: rgba(121, 236, 252, 0.8);
+}
+
 /* -------------- Background -------------- */
 
 .parallax {
