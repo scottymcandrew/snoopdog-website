@@ -50,24 +50,6 @@
     background-size: cover;
 }
 
-/* --------------- Flexbox-main ------------- */
-
-header {
-    width: 100%;
-}
-
-.flex-container-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 25px;
-}
-
-.flex-container-nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 /* -------------- Special Paddings/Margins/Text -------------------- */
 
@@ -145,8 +127,25 @@ a:hover {
 
 /* -------------- Heading / menu bar ------------- */
 
+header {
+    width: 100%;
+}
+
 .header-bar {
     width: 100%;
+}
+
+.flex-container-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.flex-container-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .header-links-left {
@@ -201,6 +200,7 @@ a:hover {
 .main-side-content {
     flex: 30%;
     padding: 20px 20px;
+    align-self: center;
 }
 
 .main-content {
@@ -208,11 +208,61 @@ a:hover {
     padding: 20px 20px;
 }
 
+.main-content > h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+}
+
+.main-content > p {
+    font-family: 'Viga', sans-serif;
+}
+
 /* .carousel-image {
     width: auto;
     height: 225px;
     max-height: 225px;
 } */
+
+/* ---------------- Footer ------------- */
+
+.flex-container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+}
+
+.social-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 25px;
+    flex: 70%;
+}
+
+.about-snoop-container {
+    flex: 30%;
+    padding: 5px 20px;
+}
+
+.about-snoop-container > h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.about-snoop-container > p {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 5px 0px;
+}
+
+.footer-link {
+    padding: 5px 10px;
+}
 
 /* -------------- Media Queries ------------- */
 
@@ -234,7 +284,7 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-    .flex-container-nav-bar {   
-      flex-direction: column;
+    .flex-container-nav-bar {
+        flex-direction: column;
     }
-  }
+}

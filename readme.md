@@ -87,7 +87,10 @@ In addition, if it is not obvious, you should also describe how to run your code
 ..* https://www.sbs.com.au/food/article/2017/11/02/martha-stewart-and-snoop-dogg-how-did-happen
 ..* http://thesource.com/2016/05/12/snoop-dogg-gives-a-second-breath-to-doggystyle-records/
 
+- Music tracks
 
+..* All reference Apple Music audio previews
+..* Specific track URLs obtained from Snoop Dogg's official website: http://snoopdogg.com/music/
 
 ### Acknowledgements
 
