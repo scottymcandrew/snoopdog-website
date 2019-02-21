@@ -210,12 +210,12 @@ header {
     padding: 20px 20px;
 }
 
-.main-content > h2 {
+.main-content h2 {
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
 }
 
-.main-content > p {
+.main-content p {
     font-family: 'Viga', sans-serif;
 }
 

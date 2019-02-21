@@ -76,7 +76,9 @@ In addition, if it is not obvious, you should also describe how to run your code
 ..* Hover CSS for some of the hover effects: http://ianlunn.github.io/Hover/
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The text for the main page bio came from Wikipedia: https://en.wikipedia.org/wiki/Snoop_Dogg
+- The text for the news articles came from Snoop Dogg's official website: http://snoopdogg.com/news/
+
 
 ### Media
 - The photos used in this site were obtained from ...
