@@ -22,11 +22,11 @@
   <header>
     <div class="flex-container-header header-bar bg-color-yellow-transparent">
       <div class="header-links-left center-text bg-color-amethyst-transparent">
-        <a href="booknow.html" class="hvr-buzz-out"><i class="fas fa-book-open"></i> <br> BOOK NOW!</a>
+        <a href="#" class="hvr-buzz-out"><i class="fas fa-book-open"></i> <br> BOOK NOW!</a>
       </div>
       <div class="nav-logo center-text">
-        <a href="index.html" class="hvr-buzz-out"> <img src="assets/images/snoop-logo-transparent.png" id="brand-logo-image"
-            alt="Snoop Dogg Logo">
+        <a href="index.html" class="hvr-buzz-out"> <img src="assets/images/snoop-logo-transparent.png"
+            id="brand-logo-image" alt="Snoop Dogg Logo">
         </a>
       </div>
       <div class="header-links-right center-text bg-color-amethyst-transparent">
@@ -49,58 +49,48 @@
 
   <main>
     <div class="flex-container-main">
-      <div class="main-side-content">
-        <!-- Left Side Bar -->
-        <div id="photoCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Photo Carousel-->
-          <div class="carousel-inner">
-            <div class="carousel-item active carousel-image">
-              <img src="assets/images/snoop1.jpg" class="d-block w-100" alt="Snoop Picture One">
-            </div>
-            <div class="carousel-item carousel-image">
-              <img src="assets/images/snoop2.jpg" class="d-block w-100" alt="Snoop Picture Two">
-            </div>
-            <div class="carousel-item carousel-image">
-              <img src="assets/images/snoop3.jpg" class="d-block w-100" alt="Snoop Picture Three">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div><!-- End Photo Carousel-->
-      </div><!-- End Left Side Bar-->
-
       <div class="main-content bg-color-yellow-transparent">
-        <div class="news-article">
-          <h2>SNOOP TOUR KICKS OFF IN CANADA</h2>
-          <p class="news-date">07/02/19</p>
-          <br>
-          <p class="news-text">Snoop Dogg is hitting a four-stop tour in Canada with shows coming up in Saskatoon, Edmonton, Calgary and Vancouver. Joining him on tour are hip-hop legends Bone Thugs-N-Harmony, Afroman, and long time collaborators Warren G and Kurupt. The tour kicks off February 19-22, get your tickets on ticketmaster today!</p>
-          <hr>
+        <div>
+          <h2 class="uppercase-text center-text">Be fillin' in da form to get yo shizzle and secure Snoop Dogg's time
+            yo!</h2>
         </div>
-        <div class="news-article">
-          <h2>SNOOP’S NEW STAGE PLAY AND BIBLE OF LOVE MERCH</h2>
-          <p class="news-date">11/08/18</p>
-          <br>
-          <p class="news-text">Snoop Dogg released his first gospel album this past March titled Bible of Love, which hit #1 on the Billboard Gospel charts. Now, he is taking his talents on tour with a brand new stage play titled Redemption of a Dogg, starring Jecaryous Johnson and Tamar Braxton. The play kicks off October 5 in Houston, TX. Tickets for the tour are ON SALE NOW!
-
-                To continue to celebrate the release of Bible of Love, Snoop has recently released a new set of merchandise from the album. Get your Bible of Love merch today!</p>
-          <hr>
-        </div>
-        <div class="news-article">
-          <h2>SNOOP DOGG HITS THE SOUTHWEST THIS MONTH</h2>
-          <p class="news-date">13/12/17</p>
-          <br>
-          <p class="news-text">Snoop is headed to the Southwest. Get your tickets now!</p>
-          <hr>
+        <hr>
+        <div class="booking-form flex-container-booking-form">
+          <form>
+            <div class="form-group">
+              <label for="fullname">Be entering yo details otherwize Snoop can't hit ya back!</label>
+              <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+            </div>
+            <div class="form-group">
+              <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
+                required />
+            </div>
+            <div class="form-group">
+                <label for="venusize">How Many Ganstas Can Fit in Da Houzzz?</label>
+                <select class="form-control" id="venuesize">
+                  <option>Up to 5000 Peeps</option>
+                  <option>5000 - 10000 Peeps</option>
+                  <option>10000 - 50000 Peeps</option>
+                  <option>Over 50000 Peeps (whoa!)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="soundsystem">How Epic is da Sound System?</label>
+                <select class="form-control" id="soundsystem">
+                  <option>Epic!</option>
+                  <option>Crazy Yo!</option>
+                  <option>Off Da Scale Homey!</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label for="additionalinfo">Any Otha Rappin' You Need to Tell Snoop?</label>
+              <textarea rows="5" name="additionalinfo" class="form-control" id="additionalinfo"
+                placeholder="Additional Information of Venue" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary center-block">Hit that request yo!</button>
+          </form>
         </div>
       </div>
-
     </div><!-- End Main Container -->
 
   </main>

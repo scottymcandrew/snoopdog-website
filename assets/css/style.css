@@ -36,6 +36,10 @@
     background-color: rgba(121, 236, 252, 0.8);
 }
 
+.bg-color-light-grey {
+    background-color: rgba(193, 193, 193, 0.8);
+}
+
 /* -------------- Background -------------- */
 
 .parallax {
@@ -49,7 +53,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 /* -------------- Special Paddings/Margins/Text -------------------- */
 
@@ -225,6 +228,56 @@ header {
     max-height: 225px;
 } */
 
+/* ---------------- Form --------------- */
+
+.flex-container-booking-form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group input,
+.form-group select,
+.form-group option,
+.form-group textarea {
+    background-color: rgba(193, 193, 193, 0.8);
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    border: 5px solid rgba(155, 89, 182, 0.8);
+}
+
+.form-group label {
+    padding-left: 10px;
+    font-family: 'Viga', sans-serif;
+    font-weight: 400;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(155, 89, 182, 0.8);
+    color: #ffffff;
+}
+
+/* ---------------- Videos ------------- */
+
+.video-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.video-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+.video-column iframe {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
 /* ---------------- Footer ------------- */
 
 .flex-container-footer {
@@ -248,14 +301,14 @@ header {
     align-self: center;
 }
 
-.about-snoop-container > h2 {
+.about-snoop-container>h2 {
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
     font-size: 24px;
     color: #ffffff;
 }
 
-.about-snoop-container > p {
+.about-snoop-container>p {
     font-family: 'Varela Round', sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -286,8 +339,27 @@ header {
     }
 }
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .video-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .video-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
 @media screen and (max-width: 700px) {
     .flex-container-nav-bar {
+        flex-direction: column;
+    }
+    .flex-container-main {
         flex-direction: column;
     }
 }
