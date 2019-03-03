@@ -359,6 +359,13 @@ button[type="submit"] {
     .flex-container-nav-bar {
         flex-direction: column;
     }
+
+    .nav-bar-link {
+        border: 5px solid rgba(245, 245, 4, 0.8);
+        /* Need to offset border with negative margin */
+        margin: -5px;
+    }
+
     .flex-container-main {
         flex-direction: column;
     }
