@@ -205,7 +205,6 @@ header {
 .main-side-content {
     flex: 30%;
     padding: 20px 20px;
-    align-self: center;
 }
 
 .main-content {
@@ -213,12 +212,24 @@ header {
     padding: 20px 20px;
 }
 
-.main-content h2 {
+.main-content-100 {
+    flex: 100%;
+    padding: 20px 20px;
+}
+
+.main-content h2,
+.main-side-content h2 {
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
 }
 
-.main-content p {
+.main-content p,
+.main-side-content p {
+    font-family: 'Viga', sans-serif;
+}
+
+.main-content li,
+.main-side-content li {
     font-family: 'Viga', sans-serif;
 }
 
@@ -267,15 +278,108 @@ button[type="submit"] {
 }
 
 /* Create four equal columns that sits next to each other */
+
 .video-column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-  }
+    margin-top: 8px;
+    vertical-align: middle;
+}
 
 .video-column iframe {
     margin-top: 8px;
     vertical-align: middle;
+}
+
+/* .vid-iframe {
+    flex-wrap: wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+} */
+
+/* ---------------- Gallery ------------- */
+
+.picture-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+
+.picture-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.picture-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+/* ---------------- Audio -------------- */
+
+.audio-tracks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.audio-player-container {
+    padding: 20px;
+}
+
+div .time {
+    display: none;
+}
+
+/* Custom syling to make the player play nice with custom sizing. Default is very wide */
+.audiojs {
+    display: table;
+    width: 350px;
+    height: 34px;
+    background: rgba(155, 89, 182, 0.8);
+    border: 5px solid rgba(155, 89, 182, 0.8);
+    .play-pause,
+    .scrubber,
+    .time {
+        display: table-cell;
+        float: none;
+        height: auto;
+        vertical-align: middle;
+    }
+    .play-pause {
+        padding: 0 6px;
+        >p {
+            margin: 0;
+            padding: 0;
+            height: 26px;
+        }
+    }
+    .scrubber {
+        width: 99%;
+        margin: 0;
+        padding: 0;
+        >div {
+            position: relative;
+            margin: 0;
+            &.progress {
+                z-index: 2;
+            }
+            &.loaded {
+                margin-top: -14px;
+                z-index: 1;
+            }
+        }
+    }
+    .time {
+        line-height: normal;
+        margin: 0;
+        padding: 0 12px;
+        width: auto;
+    }
 }
 
 /* ---------------- Footer ------------- */
@@ -340,32 +444,36 @@ button[type="submit"] {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+
 @media (max-width: 800px) {
-    .video-column {
-      flex: 50%;
-      max-width: 50%;
+    .video-column,
+    .picture-column {
+        flex: 50%;
+        max-width: 50%;
     }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .video-column {
-      flex: 100%;
-      max-width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .video-column,
+    .picture-column {
+        flex: 100%;
+        max-width: 100%;
     }
-  }
+}
 
 @media screen and (max-width: 700px) {
     .flex-container-nav-bar {
         flex-direction: column;
     }
-
     .nav-bar-link {
         border: 5px solid rgba(245, 245, 4, 0.8);
+        /* background-clip is supposed to make the border transparent */
+        background-clip: padding-box;
         /* Need to offset border with negative margin */
         margin: -5px;
     }
-
     .flex-container-main {
         flex-direction: column;
     }
