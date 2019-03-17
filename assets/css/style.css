@@ -475,6 +475,6 @@ div .time {
         margin: -5px;
     }
     .flex-container-main {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
